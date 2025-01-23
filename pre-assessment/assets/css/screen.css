@@ -125,7 +125,16 @@ body {
 	margin: 10px 0 10px 20px;
 }
 
+#content dt{
+	font-weight: bold;
+}
+
 a.style-link{
 	text-decoration: none;
 	color:#363159;
+}
+
+a.style-link:hover{
+	text-decoration: underline;
+	background-color:#CCC;
 }
