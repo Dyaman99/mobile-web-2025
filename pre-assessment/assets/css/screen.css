@@ -1,3 +1,6 @@
+/* my style colors: dark-red = #BF4953   darkPurple= #363159  Blue = #23B7D9  almostBlack = #0D0100  lightRed = #BF4141  */
+
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -72,18 +75,43 @@ body {
 	margin-bottom: 15px;
 }
 
+#content h2{
+	color: #BF4953;
+	padding: 0px 10px;
+	font-size: 1.7rem;
+	text-shadow: 1px 1px 1px #000000;
+	border-left: 9px solid #BF4141;
+}
+
+#content h3{
+	color: #23B7D9 ;
+	border-bottom: 1px solid #23B7D9;
+}
+
+#content h4{
+	color: #363159;
+}
+
 .alert{
-	background-color: blueviolet;
+	background-color: #BF4141;
 	color:#FFF;
+	padding: 10px;
 }
 #footer {
 	background-color: #000;
 	color: #FFF;
 	height: 25px;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
 }
 #footer h6 {
 	font-size: 12px;
 	line-height: 25px;
 	margin-right: 20px;
 	margin-left: 20px;
+}
+
+#footer a{
+	color: #fff;
 }
