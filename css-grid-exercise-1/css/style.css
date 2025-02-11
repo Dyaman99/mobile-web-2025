@@ -110,6 +110,12 @@ textarea {
     background: rgba(0, 0, 0, 0.4);
   }
   
+  section#content{
+    grid-column: 1/ span 4;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+  }
   #blog{
     grid-column: 1 / span 3;
     grid-row: 2;
