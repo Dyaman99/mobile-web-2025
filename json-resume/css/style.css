@@ -101,9 +101,18 @@ body{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.container{
+  max-width: 420px; /* Design Time */
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.15);
+}
 
 
 
+
+main{
+  padding: 1px 20px;
+}
 
 
 
