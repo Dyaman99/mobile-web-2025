@@ -85,6 +85,8 @@ textarea {
 
 /* JSON-Resume Color scheme: Royal Purple: #6F5392  Blue Gray: #799ACC    Dark Cornflower Blue: #2C446F   Blue Green: #359EBF */
 
+/*font-family: Verdana */
+
 
 
 html {
@@ -95,7 +97,9 @@ html {
 }
   
   
-
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 
 
