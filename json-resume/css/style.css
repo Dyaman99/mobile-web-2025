@@ -91,6 +91,7 @@ textarea {
 
 :root{
   --main-bg-color: #efefef;
+  --main-style-color:#08457e;
   --primary-type-color: #222222;
   --accent-color-1: #2C446F;
 }
@@ -99,6 +100,7 @@ textarea {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -121,7 +123,7 @@ img {
 .container {
   max-width: 420px; /* Design Time */
   margin: 0 auto;
-  background: #89c3d4;
+  background-color: var(--main-style-color);
 }
 
 /* ------ Helper Classes -------*/
@@ -184,7 +186,7 @@ nav a:hover {
 }
 
 main {
-  padding: 1px 20px;
+  padding: 1px 0px;
 }
 
 main h1 {
@@ -193,9 +195,12 @@ main h1 {
   justify-content: center;
   text-align: center;
   font-weight: 500;
-  font-variant: small-caps;
+  text-transform: uppercase;
+  background-color: var(--main-style-color);
+  color:#ffffff;
+  font-size: 2.5em;
 }
-main h1:before,
+/* main h1:before,
 main h1:after {
   background-color: var(--accent-color-1);
   content: "\a0";
@@ -203,7 +208,7 @@ main h1:after {
   height: 1px;
   position: relative;
   top: 1.6rem;
-}
+} */
 main h1:before {
   margin-right: 5px;
 }
@@ -211,8 +216,18 @@ main h1:after {
   margin-left: 5px;
 }
 
+section{
+  padding: 0px 20px;
+}
+
+section#about{
+  background-origin: border-box;
+  color:#ffffff;
+}
+
 img{
   border-radius: 100px;
+  border:1px solid #fff;
 }
 
 dl {
@@ -220,6 +235,7 @@ dl {
   /*shorthand*/
   grid-template: repeat(8, auto) / 8em 1fr;
   font-size:1.05rem;
+  color:#ffffff;
 }
 
 dt {
@@ -235,6 +251,11 @@ dd {
   border-bottom: 1px solid var(--accent-color-1);
 }
 
+
+dd a{
+  color:#fff;
+}
+
 .related-links {
   display: flex;
   justify-content: center;
@@ -248,7 +269,6 @@ dd {
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
-  color: #222222;
   text-transform: uppercase;
   font-size: 0.9em;
   background: rgba(0, 0, 0, 0.65);
@@ -265,18 +285,15 @@ dd {
   background: rgba(0, 0, 0, 0.95);
 }
 
-#skills {
+h2{
+  color: var(--main-style-color);
+  border-bottom: 1px solid var(--main-style-color);
 }
 #skills li {
   list-style-type:disc;
 }
 
 
-.job,
-.certificate {
-  border-bottom: 1px solid var(--accent-color-1);
-  padding-bottom: 20px;
-}
 
 .job h3 {
   margin: 20px 0 0 0;
@@ -295,16 +312,24 @@ footer {
 }
 #skills {
   grid-area: skills;
+  background: #fff;
+
 }
 #experience {
   grid-area: experience;
+  background: #fff;
+
 }
 #education {
   grid-area: education;
+  background: #fff;
+
 }
 
 #awards {
   grid-area: awards;
+  background: #fff;
+
 }
 
 main.container{
