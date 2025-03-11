@@ -226,6 +226,7 @@ section#about{
 }
 
 img{
+  margin-left:10px;
   border-radius: 100px;
   border:1px solid #fff;
 }
@@ -254,6 +255,15 @@ dd {
 
 dd a{
   color:#fff;
+}
+
+.details dd a {
+  color: #fff; /* Change link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.details dd a:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
 
 .related-links {
