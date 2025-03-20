@@ -34,3 +34,17 @@ $('a[href*="#"]')
       }
     }
   });
+
+  function handleScreenSizeChange() {
+    const element = document.getElementById('top');
+    if (!element) return; // Prevent errors if the element is missing
+    if (window.innerWidth >= 992) { // Screen width 768px or larger
+      element.classList.remove('container'); // Remove the 'container' class
+    } else { // Screen width smaller than 768px
+      element.classList.add('container'); // Add the 'container' class
+    }
+  }
+  
+  // Run the function on page load and when the window is resized
+  handleScreenSizeChange();
+  window.addEventListener('resize', handleScreenSizeChange);

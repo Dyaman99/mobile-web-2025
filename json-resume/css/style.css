@@ -117,6 +117,8 @@
   
   img {
     max-width: 100%;
+    display:block;
+    margin:0 auto;
   }
   
   /* ------ Utility Classes  -------*/
@@ -640,7 +642,65 @@
 
 
 @media screen and (min-width:992px){
-  header.container{
-    display:block;
+
+  main {
+    padding: 0px 0px;
   }
+
+  body{
+    background-color: #fff;
+  }
+
+  header#top{
+    display:block;
+    background-color: var(--main-style-color);
+  }
+
+  main.container{
+    /* max-width:900px; */
+    grid-template-columns: 1fr;  
+    grid-template-areas:
+      "about" 
+      "education"
+      "experience"
+      "skills" 
+      "awards"
+      ;  
+    } 
+
+    img{
+      display:block;
+      margin: 0 auto;
+    }
+
+    section#about{
+      background-color: #fff;
+      color: var(--primary-type-color);
+    }
+
+    main h1{
+      color:var(--main-style-color);
+      background-color: #fff;
+    }
+    
+    dt{
+      color:var(--primary-type-color);
+    }
+
+    dd{
+      color:var(--primary-type-color);
+    }
+    .details dd a {
+      color:var(--primary-type-color); /* Change link color */
+    }
+
+    section#skills{
+      background-color: #fff;
+      color: var(--primary-type-color);
+    }
+    section#skills h2{
+      color: var(--main-style-color);
+      border-bottom: 1px solid var(--main-style-color);
+    }
+
 }
