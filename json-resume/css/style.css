@@ -309,7 +309,16 @@
   .job h3 {
     margin: 20px 0 0 0;
   }
-  
+  article.job h3, article.leadership h3{
+    padding: 0px 5px;
+    border-left: 10px inset var(--primary-type-color);
+    font-size: 1.2em;
+  }
+
+  article h4{
+    font-size: 1.1em;
+  }
+
   footer {
     text-align: center;
     padding: 20px 0;
@@ -591,7 +600,7 @@
   
      .related-links{
       grid-area:related;
-      border-bottom:1px solid #999;
+      /* border-bottom:1px solid #999; */
       padding-bottom:50px
     }
     
@@ -661,6 +670,10 @@
 
   }
 
+  section#about h1{
+    font-size: 3.1rem;
+  }
+
   nav a:link, nav a:visited {
     border: 0px;
     text-align: center;
@@ -699,6 +712,7 @@
     main h1{
       color:var(--main-style-color);
       background-color: #fff;
+      margin-bottom: 20px;
     }
     
     dt{
@@ -710,6 +724,10 @@
     }
     .details dd a {
       color:var(--primary-type-color); /* Change link color */
+    }
+
+    .related-links{
+      flex-direction: row;
     }
 
     section#skills{
