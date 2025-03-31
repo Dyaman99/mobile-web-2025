@@ -227,7 +227,6 @@
   }
   
   img{
-    margin-left:10px;
     border-radius: 100px;
     border:1px solid #fff;
   }
@@ -235,7 +234,7 @@
   dl {
     display: grid;
     /*shorthand*/
-    grid-template: repeat(8, auto) / 8em 1fr;
+    grid-template: repeat(8, auto) / 7em 1fr;
     font-size:1.05rem;
     color:#ffffff;
   }
@@ -584,6 +583,10 @@
       "skills awards"
       ;  
     } 
+
+    section#about h1{
+      font-size: 2.2rem;
+    }
     
     #skills {
       background: var(--main-style-color);
@@ -628,7 +631,7 @@
     
   }
   
-  @media only screen and (max-width: 395px) {
+  @media only screen and (max-width: 435px) {
   .related-links{
   flex-direction:column;
     }
