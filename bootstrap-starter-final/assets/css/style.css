@@ -1,0 +1,16 @@
+
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
+     .overlay {
+        background-color: rgba(0, 0, 0, 0.5); /* Dark with 50% opacity */
+        z-index: 1;
+      }
+      
+      /* Make sure the text appears above the overlay */
+      .position-absolute.text-center {
+        z-index: 2;
+      }
+      
+    
