@@ -9,7 +9,7 @@
   </head>
   <body>
      
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-warning-subtle">
+    <nav class="navbar navbar-expand-lg bg-dessa-beige">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Dessa Living</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,9 +59,9 @@
         <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
 
         <div class="position-absolute top-50 start-50 translate-middle text-center">
-            <h1>Spring Sale</h1>
-            <h2>Save 30%</h2>
-            <button type="button" class="btn btn-dark">Shop Now</button>
+            <h1 class="display-1">Spring Sale</h1>
+            <h2 class="display-4">Save 30%</h2>
+            <button type="button" class="btn btn-dark btn-lg">Shop Now</button>
         </div>
     </div>
 
@@ -73,7 +73,6 @@
       <div class="mx-auto" style="max-width: 950px;"> 
         <div id="responsiveCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <!-- Slide 1 -->
             <div class="carousel-item active">
               <div class="row text-center">
                 <div class="col-12 col-sm-6 col-md-4">
@@ -88,7 +87,6 @@
               </div>
             </div>
         
-            <!-- Slide 2 -->
             <div class="carousel-item">
               <div class="row text-center">
                 <div class="col-12 col-sm-6 col-md-4">
@@ -106,11 +104,11 @@
         
           <!-- Controls -->
           <button class="carousel-control-prev" type="button" data-bs-target="#responsiveCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#responsiveCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -123,7 +121,7 @@
       <div class="row row-cols-1 row-cols-lg-3 g-4">
 
         <div class="col">
-          <div class="card  mx-auto h-100">
+          <div class="card  mx-auto h-100 bg-dessa-brown">
             <img src="https://placehold.co/350x350" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Home furniture</h5>
@@ -134,7 +132,7 @@
         </div>
 
         <div class="col">
-          <div class="card  mx-auto h-100">
+          <div class="card  mx-auto h-100 bg-dessa-brown">
             <img src="https://placehold.co/350x350" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">New Arrivals</h5>
@@ -145,7 +143,7 @@
         </div>
 
         <div class="col">
-          <div class="card mx-auto h-100">
+          <div class="card mx-auto h-100 bg-dessa-brown">
             <img src="https://placehold.co/350x350" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Shop Office Furniture</h5>
@@ -160,8 +158,8 @@
     
 
     <!-- Our Values -->
-
-    <section class="dessa-values text-white bg-success p-5 mt-5 mb-5">
+    <!-- Bg bootstrap green:bg-success -->
+    <section class="dessa-values text-white bg-dessa-green p-5 mt-5 mb-5">
       <h2>Designed for a Better Tomorrow</h2>
       <h4>Sustainable. Ethical. Timeless.</h4>
       <p>At Dessa Living, we believe in creating beautiful spaces without compromising the planet. Our furniture is crafted with responsibly sourced materials, eco-friendly finishes, and ethical production practices.</p>
@@ -203,11 +201,98 @@
     </section>
 
     <!--Sign Up to Dessa Living News-->
-    <section class="sign-up">
+    <!--bg-warning-subtle -->
+    <section class="sign-up container mt-5 mb-5 bg-dessa-beige  p-2">
+      <div class="d-flex flex-column flex-md-row align-items-center">
+        <div class="flex-shrink-0">
+          <img src="assets/img/sign-up-photo1.jpg" class="img-fluid" alt="sign up dessa photo">
+        </div>
+        <div class="flex-grow-1 ms-3">
+          <h2>Stay Inspired With Dessa Living</h2>
+          <h5>Exclusive offers, design tips, and new arrivals—straight to your inbox.</h5>
+          <p>Join our community and be the first to know about seasonal sales, styling inspiration, and special promotions.</p>
 
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Your email address" aria-label="Recipient's email address" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
+          </div>
+        </div>
+      </div>
     </section>
     
-    <footer></footer>
+    <footer class="p-5 mt-5 bg-dark">
+      <div class="accordion accordion-flush bg-dark" id="accordionFlushExample">
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              About Dessa
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body text-white">
+              <ul class="list-unstyled bg-dark text-white">
+                <li><a>About Dessa</a></li>
+                <li><a>Careers</a></li>
+                <li><a>Environmental Initiatives</a></li>
+                <li><a>Investors</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Resources
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse bg-dark text-white" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul class="list-unstyled bg-dark text-white">
+                <li><a>Catalog</a></li>
+                <li><a>Product Warranty</a></li>
+                <li><a>Wood Warranty</a></li>
+                <li><a>Product Safety</a></li>
+                <li><a>Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Customer Service
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse bg-dark text-white" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul class="list-unstyled bg-dark text-white">
+                <li><a>Shipping & Delivery</a></li>
+                <li><a>Return Policy</a></li>
+                <li><a>Financing Plans</a></li>
+                <li><a>Gift Card</a></li>
+                <li><a>FAQs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Store
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse bg-dark text-white" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul class="list-unstyled bg-dark text-white">
+                <li><a>Find a Store</a></li>
+                <li><a>Store Reviews</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>

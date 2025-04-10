@@ -1,8 +1,29 @@
+/*==========================  My Color Scheme  ============================== */
 
-  /* ==========================================================================
-     Author's custom styles
-     ========================================================================== */
+
+.bg-dessa-beige{
+  background-color: #EFEDE4;
+}
+
+.bg-dessa-brown{
+  background-color: #B3A398;
+}
+
+.bg-dessa-green{
+  background-color: #A3B18A;
+}
+
+.bg-dessa-gray{
+  background-color: #6C757D;
+}
+
+
+
+/* ==========================================================================
+    Author's custom styles
+========================================================================== */
   
+/* Make Main picture darker */
      .overlay {
         background-color: rgba(0, 0, 0, 0.5); /* Dark with 50% opacity */
         z-index: 1;
@@ -12,5 +33,16 @@
       .position-absolute.text-center {
         z-index: 2;
       }
+
+/* Make the Acordion arrow white*/
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+
+
+
+
       
     
