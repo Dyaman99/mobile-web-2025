@@ -1,0 +1,15 @@
+.container{
+    width:350px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section#audio{
+    background-color: #cccccc;
+    padding:40px;
+}
+
+section#audio header{
+    background-color: lightcoral;
+    padding: 20px 0;
+}
