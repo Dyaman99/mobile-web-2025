@@ -5,11 +5,21 @@
 }
 
 section#audio{
-    background-color: #cccccc;
+    background-color: #ece9e9;
     padding:40px;
 }
 
 section#audio header{
     background-color: lightcoral;
-    padding: 20px 0;
+    border: 1px solid lightcoral;
+    border-radius:10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+
+section#audio article{
+    background-color:rgb(131, 190, 250);
+    border: 1px solid rgb(131, 190, 250);
+    border-radius:10px;
+    padding: 20px 10px;
 }

@@ -41,9 +41,37 @@ h1{
 
 .container ul{
     font-size: 1.2rem;
+    padding: 0px;
 }
 
 
+
+a:link, a:visited{
+  text-decoration: none;
+  color:#000000;
+}
+
+a:hover{
+  color:#9864FA;
+}
+
+section#assignments nav ul{
+  display:grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+ul li{
+  list-style-type: none;
+  border:1px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+ul li:hover{
+  background-color: rgb(237, 237, 192);
+}
 
 
 
@@ -70,3 +98,16 @@ h1{
   }
 }
 
+
+@media screen and (max-width:780px){
+  section#assignments nav ul{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media screen and (max-width:500px){
+  section#assignments nav ul{
+    grid-template-columns: 1fr;
+  }
+}
