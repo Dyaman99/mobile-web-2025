@@ -208,17 +208,62 @@ footer{
   padding: 20px;
 }
 
+div.mobile-footer details{
+  color:#fff;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+details summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+summary::after {
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid #fff;
+  border-inline: 7px solid transparent;
+  transition: 0.2s;
+}
+
+
+details[open] > summary::after {
+  transform: rotate(-180deg);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details ul{
+  list-style-type: none;
+  padding: 10px 20px;
+}
 
 
 
 
+footer div.lg-footer{
+  color:#F5F5F5;
+  display: none;
+}
 
+div.lg-footer div{
+  margin: 20px;
+}
 
+div.lg-footer div h3{
+  font-size: 1.1em;
+}
 
-
-
-
-
+div.lg-footer div ul{
+  list-style-type: none;
+  padding: 10px 0px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -311,6 +356,17 @@ footer{
     .container{
       max-width:700px;
     }
+
+    div.mobile-footer{
+      display:none;
+    }
+
+    footer div.lg-footer{
+      display:flex;
+      flex-direction: row;
+    }
+
+    
     
   }
   
