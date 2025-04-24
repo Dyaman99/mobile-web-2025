@@ -27,6 +27,7 @@
    :root{
     --main-bg-color: #F5F5F5;
     --light-bg-color:#EFEDE4;
+    --dark-bg-color: #333333;
     --primary-type-color: #222222;
     --post-color-1: #B3A398;
     --post-color-2: #6C757D;
@@ -36,9 +37,8 @@
 
    /* ------ Utility Classes  -------*/
   .container {
-    max-width: 420px; /* Design Time */
+    max-width: 380px; /* Design Time */
     margin: 0 auto;
-    background-color: var(--main-style-color);
   }
   
   img{
@@ -46,7 +46,7 @@
   }
 
 
-/*---------------- Accessible Slick  ----------------------- */
+/*-------------------- Accessible Slick  ---------------------- */
 /* Customize Previous/Next/Dots/Autoplay */
 
 .responsive div {
@@ -65,7 +65,6 @@
   color: grey;
 }
 
-/* Customize Previous/Next/Dots/Autoplay - Active State */
 
 .slick-next:focus .slick-next-icon,
 .slick-next:focus .slick-prev-icon,
@@ -77,6 +76,142 @@
 {
     color:black;
 }
+
+
+
+/*-------------------- Main Promotional Banner ---------------------- */
+
+section.main-banner{
+  background-image: url(../img/main-head-photo1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  place-content: center;
+  text-align: center;
+  min-block-size: 80vh;
+}
+
+section.overlay {
+  position:relative;
+  border-image: linear-gradient(
+      hsl(0 0% 0% / 0.7),
+      hsl(0 0% 20% / 0.7)) 
+      fill 1;
+}
+
+
+
+div.sale-banner-text h1, div.sale-banner-text h2{
+  color:#EFEDE4;
+  font-size: 4em;
+}
+
+section.main-banner button{
+  border: none;
+  padding: 10px 12px;
+  background-color: #222222;
+  color:#EFEDE4;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
+
+
+
+/*-------------------- Sale products Slick ---------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------ Main Furniture Categories -------------------- */
+
+section#furniture-categories{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:20px;
+
+}
+
+section#furniture-categories article{
+  background-color: var(--post-color-1);
+  border-radius: 10px;
+  width: 350px;
+}
+
+
+article.categories img{
+  border-radius: 10px 10px 0 0;
+}
+
+article.categories div{
+  padding: 10px;
+}
+
+
+
+/*------------------ Our Values -------------------- */
+
+
+section#store-values{
+  background-color: var(--value-color);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+
+
+/*----------------- Special Collection ----------------- */
+
+section#special-collection{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+section#special-collection article{
+  background-color: var(--post-color-2);
+  border-radius: 10px;
+  width: 350px;
+}
+
+
+
+
+/*---------------- Dessa Newsletter Sign Up ---------------- */
+
+section#newsletter-su{
+  background-color: var(--light-bg-color);
+  margin: 40px 20px;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+/*--------------------- Footer Styles -------------------- */
+
+footer{
+  background-color: var(--dark-bg-color);
+  padding: 20px;
+}
+
+
+
+
+
 
 
 
@@ -163,21 +298,58 @@
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   /*-------------------Media Queries------------------ */
+  
+  
+
+  /*-----------------Tablet View---------------------- */
+  
+  @media screen and (min-width:768px){
+    
+    .container{
+      max-width:700px;
+    }
+    
+  }
+  
+  
+
+
+  /*-----------------------Desktop View--------------------- */
+
+
+@media screen and (min-width:992px){
+
+    .container{
+      max-width: 900px;
+    }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Print styles.
