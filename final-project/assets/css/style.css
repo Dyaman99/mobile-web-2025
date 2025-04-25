@@ -46,6 +46,16 @@
   }
 
 
+/*-------------------- Main Navigation  ---------------------- */
+
+
+
+
+
+
+
+
+
 /*-------------------- Accessible Slick  ---------------------- */
 /* Customize Previous/Next/Dots/Autoplay */
 
@@ -137,7 +147,7 @@ section#furniture-categories{
   display: grid;
   grid-template-columns: 1fr;
   grid-gap:20px;
-
+  justify-items: center;
 }
 
 section#furniture-categories article{
@@ -152,7 +162,11 @@ article.categories img{
 }
 
 article.categories div{
-  padding: 10px;
+  padding: 16px 12px;
+}
+
+section#furniture-categories article div a{
+  color: #222222;
 }
 
 
@@ -175,12 +189,18 @@ section#special-collection{
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+  justify-items: center;
+
 }
 
 section#special-collection article{
   background-color: var(--post-color-2);
   border-radius: 10px;
   width: 350px;
+  color:#F5F5F5;
+}
+section#special-collection article div a{
+  color: #F5F5F5;
 }
 
 
@@ -194,7 +214,15 @@ section#newsletter-su{
   padding: 10px;
 }
 
+section#newsletter-su img{
+  margin-bottom: 20px;
+}
 
+
+section#newsletter-su > div{
+  display:flex;
+  flex-direction: column;
+}
 
 
 
@@ -264,6 +292,31 @@ div.lg-footer div ul{
   list-style-type: none;
   padding: 10px 0px;
 }
+
+div.brand-socials{
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+
+div.contact{
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #F5F5F5;
+}
+
+div.contact i{
+  margin: 10px;
+
+}
+div.brand-socials i{
+  color: #F5F5F5;
+}
+
+
 
 /* ==========================================================================
    Helper classes
@@ -357,6 +410,7 @@ div.lg-footer div ul{
       max-width:700px;
     }
 
+    
     div.mobile-footer{
       display:none;
     }
@@ -364,7 +418,10 @@ div.lg-footer div ul{
     footer div.lg-footer{
       display:flex;
       flex-direction: row;
+      justify-content: space-evenly;
     }
+
+
 
     
     
@@ -379,8 +436,27 @@ div.lg-footer div ul{
 @media screen and (min-width:992px){
 
     .container{
-      max-width: 900px;
+      max-width: 1000px;
     }
+
+    section#furniture-categories{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#special-collection{
+      grid-template-columns: 1fr 1fr;
+    
+    }
+
+    section#newsletter-su > div{
+      flex-direction: row;
+    }
+
+    section#newsletter-su img{
+      margin-bottom: 0px;
+      margin-right: 16px;
+    }
+
 
 }
 
