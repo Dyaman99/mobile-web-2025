@@ -6,7 +6,7 @@
 }
 
 .bg-dessa-brown{
-  background-color: #B3A398;
+  background-color: #bcafa6;
 }
 
 .bg-dessa-green{
@@ -29,8 +29,9 @@
     --light-bg-color:#EFEDE4;
     --dark-bg-color: #333333;
     --primary-type-color: #222222;
-    --post-color-1: #B3A398;
+    --post-color-1: #E9E6DF;
     --post-color-2: #6C757D;
+    
     --value-color: #A3B18A;
   }
 
@@ -45,13 +46,32 @@
     max-width:100%;
   }
 
+  .playfair-display{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
 
+
+  body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+  }
 /*-------------------- Main Navigation  ---------------------- */
 
 
-
-
-
+div.header h1{
+  color: #000;
+  background-image: url("../img/dessa-brand-logo.svg");
+  display: block;
+  width: 180px;
+  height: 45px;
+  margin: 1px auto 5px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
 
 
 
@@ -146,19 +166,24 @@ section.main-banner button{
 section#furniture-categories{
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap:20px;
+  grid-gap:30px;
   justify-items: center;
 }
 
 section#furniture-categories article{
+  color:#222222;
   background-color: var(--post-color-1);
-  border-radius: 10px;
-  width: 350px;
+  /* box-shadow: 0 4px 8px rgba(0,0,0, .6); */
+  border-radius: 8px;
+  width: 349px;
 }
+/* 
+#furniture-categories article.categories:hover{
+  box-shadow: 0 6px 16px rgba(0,0,0, .6);
+} */
 
-
-article.categories img{
-  border-radius: 10px 10px 0 0;
+article.categories picture img{
+  border-radius: 8px 8px 0 0;
 }
 
 article.categories div{
@@ -179,6 +204,7 @@ section#store-values{
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 20px;
+  color:#fff;
 }
 
 
@@ -188,17 +214,23 @@ section#store-values{
 section#special-collection{
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 30px;
   justify-items: center;
 
 }
 
 section#special-collection article{
   background-color: var(--post-color-2);
-  border-radius: 10px;
-  width: 350px;
+  border-radius: 8px;
+  width: 335px;
+  /* box-shadow: 0 4px 8px rgba(0,0,0, .6); */
   color:#F5F5F5;
 }
+
+/* #special-collection article.categories:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0, .6);
+  } */
+  
 section#special-collection article div a{
   color: #F5F5F5;
 }
@@ -234,6 +266,8 @@ section#newsletter-su > div{
 footer{
   background-color: var(--dark-bg-color);
   padding: 20px;
+  color:#F5F5F5;
+
 }
 
 div.mobile-footer details{
@@ -305,7 +339,6 @@ div.contact{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: #F5F5F5;
 }
 
 div.contact i{
@@ -421,6 +454,10 @@ div.brand-socials i{
       justify-content: space-evenly;
     }
 
+    section#furniture-categories article{
+      width: 560px;
+    }
+
 
 
     
@@ -441,6 +478,10 @@ div.brand-socials i{
 
     section#furniture-categories{
       grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#furniture-categories article{
+      width: 299px;
     }
 
     section#special-collection{
