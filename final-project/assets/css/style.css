@@ -62,20 +62,48 @@
 
 div.header h1{
   color: #000;
-  background-image: url("../img/dessa-brand-logo.svg");
+  background-image: url("../img/final-brand-logo.svg");
   display: block;
-  width: 180px;
-  height: 45px;
-  margin: 1px auto 5px;
+  width: 163px;
+  height: 44px;
+  margin: 1px auto 2px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   background-repeat: no-repeat;
 }
 
+div#navbarNavDropdown{
+  margin-left:20px;
+  margin-bottom: -5px;
+}
 
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
 
+.dropdown-menu {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
+span#city-name{
+  display: none; 
+  margin-left: 5px;
+  margin-right: 8px;
+}
+
+span#city-name a{
+  color:#222222;
+}
+
+span#city-name a:visited{
+  color:var(--primary-type-color);
+}
 /*-------------------- Accessible Slick  ---------------------- */
 /* Customize Previous/Next/Dots/Autoplay */
 
@@ -171,6 +199,7 @@ section#furniture-categories{
 }
 
 section#furniture-categories article{
+  padding:0px;
   color:#222222;
   background-color: var(--post-color-1);
   /* box-shadow: 0 4px 8px rgba(0,0,0, .6); */
@@ -207,6 +236,12 @@ section#store-values{
   color:#fff;
 }
 
+section#store-values div.container h4{
+  font-style:italic;
+  font-weight: 400;
+  /* letter-spacing: 0.09rem; */
+}
+
 
 
 /*----------------- Special Collection ----------------- */
@@ -222,7 +257,7 @@ section#special-collection{
 section#special-collection article{
   background-color: var(--post-color-2);
   border-radius: 8px;
-  width: 335px;
+  width: 349px;
   /* box-shadow: 0 4px 8px rgba(0,0,0, .6); */
   color:#F5F5F5;
 }
@@ -266,7 +301,7 @@ section#newsletter-su > div{
 footer{
   background-color: var(--dark-bg-color);
   padding: 20px;
-  color:#F5F5F5;
+  color:var(--main-bg-color);
 
 }
 
@@ -310,7 +345,7 @@ details ul{
 
 
 footer div.lg-footer{
-  color:#F5F5F5;
+  color:var(--main-bg-color);
   display: none;
 }
 
@@ -327,11 +362,27 @@ div.lg-footer div ul{
   padding: 10px 0px;
 }
 
+div.lg-footer div ul li a{
+  color:var(--main-bg-color);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+
+div.lg-footer div ul li a:hover{
+  text-decoration: underline;
+}
+
 div.brand-socials{
-  margin: 40px auto;
+  margin: 0px auto;
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content:center;
+}
+
+div.brand-socials i{
+  margin: 40px;
+
 }
 
 div.contact{
@@ -346,9 +397,13 @@ div.contact i{
 
 }
 div.brand-socials i{
-  color: #F5F5F5;
+  color: var(--main-bg-color);
 }
 
+div#copyright-dessa{
+  margin:40px auto 20px;
+  text-align: center;
+}
 
 
 /* ==========================================================================
@@ -431,8 +486,7 @@ div.brand-socials i{
 /* ==========================================================================
    ========================================================================== */
 
-   /*-------------------Media Queries------------------ */
-  
+/*---------------------Media Queries-------------------- */
   
 
   /*-----------------Tablet View---------------------- */
@@ -440,7 +494,7 @@ div.brand-socials i{
   @media screen and (min-width:768px){
     
     .container{
-      max-width:700px;
+      max-width:600px;
     }
 
     
@@ -458,6 +512,9 @@ div.brand-socials i{
       width: 560px;
     }
 
+    section#special-collection article{
+      width: 560px;
+    }
 
 
     
@@ -467,13 +524,13 @@ div.brand-socials i{
   
 
 
-  /*-----------------------Desktop View--------------------- */
+  /*----------------------- Desktop View (Small) --------------------- */
 
 
 @media screen and (min-width:992px){
 
     .container{
-      max-width: 1000px;
+      max-width: 984px;
     }
 
     section#furniture-categories{
@@ -487,6 +544,9 @@ div.brand-socials i{
     section#special-collection{
       grid-template-columns: 1fr 1fr;
     
+    }
+    section#special-collection article{
+      width: 465px;
     }
 
     section#newsletter-su > div{
@@ -502,11 +562,49 @@ div.brand-socials i{
 }
 
 
+ /*---------------------- Desktop View (Large) --------------------- */
 
 
 
+ @media screen and (min-width:1320px){
+
+  .container{
+    max-width: 1131px;
+  }
+
+  section#furniture-categories article{
+    width: 349px;
+  }
+
+  section#special-collection{
+    grid-gap:177px;
+  
+  }
+  section#special-collection article{
+    width: 465px;
+  }
+}
 
 
+
+/* ---------- Additional Tweaks ----------- */
+
+@media screen and (min-width:1200px){
+  nav.navbar{
+    padding-left:20px;
+    padding-right:20px;
+
+  }
+
+  form.search-bar{
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+  span#city-name{
+    display: inline;
+  }
+}
 
 
 
