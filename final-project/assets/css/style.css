@@ -30,7 +30,7 @@
     --dark-bg-color: #333333;
     --primary-type-color: #222222;
     --post-color-1: #E9E6DF;
-    --post-color-2: #6C757D;
+    --post-color-2: #CBC1BF;
     
     --value-color: #A3B18A;
   }
@@ -256,7 +256,7 @@ section#special-collection article{
   border-radius: 8px;
   width: 349px;
   /* box-shadow: 0 4px 8px rgba(0,0,0, .6); */
-  color:#F5F5F5;
+  color:#000000;
 }
 
 /* #special-collection article.categories:hover{
@@ -264,7 +264,7 @@ section#special-collection article{
   } */
   
 section#special-collection article div a{
-  color: #F5F5F5;
+  color: #000000;
 }
 
 
@@ -275,11 +275,11 @@ section#special-collection article div a{
 section#newsletter-su{
   background-color: var(--light-bg-color);
   margin: 40px 20px;
-  padding: 10px;
+  padding: 20px;
 }
 
 section#newsletter-su img{
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 
@@ -290,7 +290,21 @@ section#newsletter-su > div{
 
 
 
+.newsletter-form input[type="email"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
 
+.newsletter-form button{
+  border: 1px solid #ccc;
+  border-radius:6px;
+  padding: 8px 10px;
+}
 
 
 /*--------------------- Footer Styles -------------------- */
