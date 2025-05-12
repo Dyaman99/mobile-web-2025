@@ -30,9 +30,29 @@
     --dark-bg-color: #333333;
     --primary-type-color: #222222;
     --post-color-1: #E9E6DF;
-    --post-color-2: #CBC1BF;
+    --post-color-2:#BCC9D7;
+    --blue-cloudy:  #BCC9D7;
     
     --value-color: #A3B18A;
+    --btn-dark:  #3C3C3C;
+    --btn-dark-hover: #1F1F1F;
+
+
+    /* 
+    var(--main-bg-color)
+    var(--light-bg-color)
+    var(--dark-bg-color)
+    var(--primary-type-color)
+    var(--post-color-1)
+    var(--post-color-2)
+    var(--blue-cloudy)
+    
+    var(--value-color)
+    
+    
+    
+    
+    */
   }
 
 
@@ -59,14 +79,18 @@
   }
 /*-------------------- Main Navigation  ---------------------- */
 
-
 div.header h1{
-  color: #000;
+    color: #000;
+    margin: 8px 5px;
+
+}
+
+div.header h1 a{
   background-image: url("../img/final-brand-logo.svg");
   display: block;
   width: 163px;
   height: 44px;
-  margin: 1px auto 2px;
+  margin: 0px auto;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -91,46 +115,18 @@ span#city-name{
 }
 
 span#city-name a{
-  color:#222222;
+  color:var(--primary-type-color)2;
 }
 
 span#city-name a:visited{
   color:var(--primary-type-color);
 }
 
-
-
-
-/*-------------------- Accessible Slick  ---------------------- */
-/* Customize Previous/Next/Dots/Autoplay */
-
-.responsive div {
-  padding: 10px;
+.store-icons{
+  display: flex;
+  flex-direction: row;
 }
 
-.responsive img {
-  width: 100%;
-  height: auto;
-}
-
-.slick-autoplay-toggle-button,
-.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
-.slick-dots li button .slick-dot-icon,
-.slick-dots li.slick-active button .slick-dot-icon {
-  color: grey;
-}
-
-
-.slick-next:focus .slick-next-icon,
-.slick-next:focus .slick-prev-icon,
-.slick-prev:focus .slick-next-icon,
-.slick-prev:focus .slick-prev-icon,
-.slick-dots li button:focus .slick-dot-icon:before,
-.slick-dots li.slick-active button:focus .slick-dot-icon,
-.slick-autoplay-toggle-button:focus 
-{
-    color:black;
-}
 
 
 
@@ -176,8 +172,47 @@ section.main-banner button{
 
 /*-------------------- Sale products Slick ---------------------- */
 
+section#sale-products{
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+section#sale-products h1{
+  text-align: center;
+  margin-bottom: 0;
+}
 
 
+/*-------------------- Accessible Slick  ---------------------- */
+/* Customize Previous/Next/Dots/Autoplay */
+
+.responsive div {
+  padding: 10px;
+}
+
+.responsive img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: grey;
+}
+
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
 
 
 
@@ -200,11 +235,12 @@ section#furniture-categories{
 
 section#furniture-categories article{
   padding:0px;
-  color:#222222;
+  color:var(--primary-type-color);
   background-color: var(--post-color-1);
   /* box-shadow: 0 4px 8px rgba(0,0,0, .6); */
   border-radius: 8px;
   width: 349px;
+  position: relative;
 }
 /* 
 #furniture-categories article.categories:hover{
@@ -216,13 +252,31 @@ article.categories picture img{
 }
 
 article.categories div{
-  padding: 16px 12px;
+  padding: 16px 16px;
+  margin-bottom: 40px;
 }
 
-section#furniture-categories article div a{
-  color: #222222;
+.button-pr{
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #FFFFFF;       
+  font-size:1.05em ;     
+  padding: 0.6em 2em;
+  background-color: var(--btn-dark);
+  border: 2px solid var(--btn-dark);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  position: absolute;
+  bottom:16px;
+  left:16px;
 }
 
+.button-pr:hover {
+  background-color: var(--btn-dark-hover);
+  border-color: var(--btn-dark-hover);
+}
 
 
 /*------------------ Our Values -------------------- */
@@ -260,16 +314,13 @@ section#special-collection article{
   width: 349px;
   /* box-shadow: 0 4px 8px rgba(0,0,0, .6); */
   color:#000000;
+  position: relative;
 }
 
 /* #special-collection article.categories:hover{
   box-shadow: 0 8px 16px rgba(0,0,0, .6);
   } */
   
-section#special-collection article div a{
-  color: #000000;
-}
-
 
 
 
@@ -429,7 +480,8 @@ div#copyright-dessa{
 /* ----------------- Maps / Location Page ----------------------*/
 
 section#location{
-  padding: 40px 20px;
+  margin-top: 40px;
+  padding: 20px 20px 40px;
   border:#ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -438,6 +490,8 @@ section#location{
 /* I watched a youtube video to do this */
 
 section#location h1{
+  color:var(--primary-type-color);
+  font-weight: bold;
   text-align: center;
   margin: 20px 0px;
 }
