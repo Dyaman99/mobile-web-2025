@@ -45,28 +45,12 @@ body {
 
 
 
-h1{
+section#assignments h1{
     color:var(--main-style-color);
     border-bottom: 1px solid grey;
     font-size:2.1rem;
     text-align: center;
 
-}
-
-.container ul{
-    font-size: 1.2rem;
-    padding: 0px;
-}
-
-
-
-a:link, a:visited{
-  text-decoration: none;
-  color:var(--primary-type-color);
-}
-
-a:hover{
-  color:var(--main-style-color);
 }
 
 section#assignments nav ul{
@@ -75,18 +59,35 @@ section#assignments nav ul{
   grid-template-columns: 1fr;
 }
 
-ul li{
+ul#assignments-list{
+    font-size: 1.2rem;
+    padding: 0px;
+    margin:0px;
+}
+
+ul#assignments-list li{
   list-style-type: none;
-  border:1px solid var(--primary-type-color);
+  display: flex;
+}
+
+ul#assignments-list li a {
+  flex: 1;                     /* <-- fill entire <li> */
+  display: flex;               
+  align-items: center;      
+  justify-content: center;    
+  padding: 10px;               
+  box-sizing: border-box;      
+  border: 1px solid var(--primary-type-color);
   border-radius: 5px;
-  padding: 10px;
+  text-decoration: none;       /* move this here; no need for separate a:link */
+  color: var(--primary-type-color);
 }
 
 
-ul li:hover{
+ul#assignments-list li a:hover {
   background-color: rgb(237, 237, 192);
+  color: var(--main-style-color);
 }
-
 
 
 
