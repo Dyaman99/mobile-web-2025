@@ -27,12 +27,12 @@
    :root{
     --main-bg-color: #F5F5F5;
     --light-bg-color:#EFEDE4;
+    --menu-active: #8E8375;
     --dark-bg-color: #333333;
     --primary-type-color: #222222;
     --post-color-1: #E9E6DF;
     --post-color-2:#BCC9D7;
     --blue-cloudy:  #BCC9D7;
-    
     --value-color: #A3B18A;
     --btn-dark:  #3C3C3C;
     --btn-dark-hover: #1F1F1F;
@@ -107,6 +107,9 @@ div#navbarNavDropdown{
   padding: 4px 2px;
 }
 
+a.dropdown-item:active{
+  background-color: var(--menu-active);
+}
 
 span#city-name{
   display: none; 
